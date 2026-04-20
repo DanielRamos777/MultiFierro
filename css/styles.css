@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* barra de navegación */
+.logo {
+    color: white;
+    font-size:medium;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e3a5f;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+/* Pie de pagina */
+.footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Estilos para el contenido principal */
+h1 {
+    color: #1e3a5f;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilos para la tabla en contacto */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #1e3a5f;
+    border-color: #1e3a5f ;
+}
+/*Estilos de las imagenes en galeria*/
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+/*Estilos de las imagenes en videos*/
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para inicio */
+.inicio{
+    text-align: center;
+    padding: 50px 20px;
+    h2 {
+        color: #1e3a5f;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+        color: #1e3a5f;
+    }
+}
