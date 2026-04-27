@@ -1,43 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <link rel="icon" href="../img/logo_M.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/contacto.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">MultiFierro</div>
-        <ul class="nav-links">      
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./productos.html">Producto</a></li>
-            <li><a href="./galeria.html">Galeria</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <h1>Contacto</h1>
 
-        <form action="#" method="POST">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+<!-- HEADER (igual que index) -->
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
 
-        <label for="email">Correo:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+      <div class="logo">
+        <img src="../img/logo_blanco.png" alt="Logo MultiFierro">
+      </div>
 
-        <label for="telefono">Teléfono:</label><br>
-        <input type="tel" id="telefono" name="telefono" required><br><br>
-        
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea><br><br>
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
 
-        <button type="submit">Enviar</button>
-        </form>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
 
-    <footer class="footer">
-    <p>2026 MultiFierro</p>
-    <p>Contacto: multifierro@gmail.com | Tel: 123123123</p>
+      <div class="nav-extra">
+        <input type="text" placeholder="Buscar...">
+        <button>🔍</button>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<!-- MAIN -->
+<main class="contacto">
+    <h1>Contáctanos</h1>
+</main>
+
+<!-- FOOTER (igual que index) -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>MultiFierro</h3>
+      <p>Tu tienda de productos tecnológicos de confianza.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contacto</h4>
+      <p>Email: multifierro@gmail.com</p>
+      <p>Tel: 123123123</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Síguenos</h4>
+      <div class="social">
+        <a href="#"><img src="../img/svg/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="../img/svg/icons8-tik-tok.svg" alt="TikTok"></a>
+        <a href="#"><img src="../img/svg/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="../img/svg/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="../img/svg/youtube-play.svg" alt="YouTube"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>2026 MultiFierro - Todos los derechos reservados</p>
+  </div>
 </footer>
+
+<script src="../js/js.js"></script>
+
 </body>
 </html>

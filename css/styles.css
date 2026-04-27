@@ -7,94 +7,198 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
+    color: #1e293b;
 }
 
-/* barra de navegación */
-.logo {
-    color: white;
-    font-size:medium;
-}
+/* NAVBAR */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1e3a5f;
-    padding: 10px 20px;
+  background: #003092; /* antes #111 */
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: clamp(80px, 12vw, 200px);
+  height: auto;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* LINKS */
 .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 15px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-/* Pie de pagina */
-.footer {
-    background-color: #1e3a5f;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
 }
 
-/* Estilos para el contenido principal */
-h1 {
-    color: #1e3a5f;
-    text-align: center;
-    margin-top: 50px;
+.nav-links a:hover {
+  color: #FEC400; /* antes celeste */
 }
 
-/* Estilos para la tabla en contacto */
-form {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #1e3a5f;
-    border-color: #1e3a5f ;
+/* BUSCADOR */
+.nav-extra {
+  display: flex;
+  gap: 5px;
 }
-/*Estilos de las imagenes en galeria*/
-.fotos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    img {
-        width: 200px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 5px;
-    }
+
+.nav-extra input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-/*Estilos de las imagenes en videos*/
-.videos {
-    display: flex;
+
+.nav-extra button {
+  padding: 5px 10px;
+  border: none;
+  background: #FEC400; /* amarillo */
+  color: #003092;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-extra button:hover {
+  background: #e6b800;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+/* HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #003092; /* antes negro */
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    display: none;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-extra {
+    display: none;
+  }
 }
 
-/* Estilos para inicio */
-.inicio{
+/* -----------------FOOTER--------------------- */
+.footer {
+  background: #003092; /* antes #111 */
+  color: white;
+  padding: 40px 20px 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* SECCIONES */
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #FEC400; /* amarillo */
+}
+
+/* LISTAS */
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+/* REDES */
+.social {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* PARTE INFERIOR */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #ddd;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
     text-align: center;
-    padding: 50px 20px;
-    h2 {
-        color: #1e3a5f;
-        margin-bottom: 20px;
-    }
-    p {
-        font-size: 18px;
-        color: #1e3a5f;
-    }
+  }
+
+  .social {
+    justify-content: center;
+  }
 }
