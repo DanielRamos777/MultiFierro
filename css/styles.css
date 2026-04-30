@@ -63,26 +63,59 @@ body {
 /* BUSCADOR */
 .nav-extra {
   display: flex;
-  gap: 5px;
+  align-items: center;
+  position: relative;
 }
 
 .nav-extra input {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 8px 35px 8px 15px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 180px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.nav-extra input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-extra input:focus {
+  outline: none;
+  width: 220px;
+  background-color: white;
+  color: #1e293b;
+  border-color: #FEC400;
+  box-shadow: 0 0 0 3px rgba(254, 196, 0, 0.3);
+}
+
+.nav-extra input:focus::placeholder {
+  color: #94a3b8;
 }
 
 .nav-extra button {
-  padding: 5px 10px;
+  position: absolute;
+  right: 12px;
+  background: transparent;
   border: none;
-  background: #FEC400; /* amarillo */
-  color: #003092;
-  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-extra input:focus + button {
+  color: #003092;
 }
 
 .nav-extra button:hover {
-  background: #e6b800;
+  transform: scale(1.1);
 }
 
 /* RESPONSIVE */
