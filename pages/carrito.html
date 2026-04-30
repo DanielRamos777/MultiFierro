@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+
+  <link rel="icon" href="../img/logo_M.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/carrito.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+
+        <div class="logo">
+          <img src="../img/logo_blanco.png" alt="Logo MultiFierro">
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+          ☰
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./galeria.html">Galería</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="nav-extra">
+          <input type="text" placeholder="Buscar...">
+          <button>🔍</button>
+          <!-- Ícono del carrito -->
+          <a href="./carrito.html" class="cart-icon">🛒</a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CARRITO -->
+  <main class="carrito-main">
+    <h1>Mi Carrito de Compras</h1>
+
+    <div class="carrito-container">
+      <div class="carrito-table-wrapper">
+        <table class="carrito-table">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Subtotal</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Producto 1 -->
+            <tr>
+              <td class="producto-col">
+                <div class="producto-info">
+                  <div class="producto-img">🛠️</div>
+                  <div>
+                    <h4>Taladro de Impacto 750W</h4>
+                    <p class="text-sm">Marca: Dewalt</p>
+                  </div>
+                </div>
+              </td>
+              <td>s/. 1,200.00</td>
+              <td>
+                <div class="cantidad-control">
+                  <button>-</button>
+                  <input type="number" value="1" min="1">
+                  <button>+</button>
+                </div>
+              </td>
+              <td class="subtotal-text">s/. 1,200.00</td>
+              <td>
+                <button class="btn-eliminar">🗑️</button>
+              </td>
+            </tr>
+
+            <!-- Producto 2 -->
+            <tr>
+              <td class="producto-col">
+                <div class="producto-info">
+                  <div class="producto-img" style="background-color: #cbd5e1;">🪛</div>
+                  <div>
+                    <h4>Set de Destornilladores (12 pzas)</h4>
+                    <p class="text-sm">Marca: Truper</p>
+                  </div>
+                </div>
+              </td>
+              <td>s/. 350.00</td>
+              <td>
+                <div class="cantidad-control">
+                  <button>-</button>
+                  <input type="number" value="2" min="1">
+                  <button>+</button>
+                </div>
+              </td>
+              <td class="subtotal-text">s/. 700.00</td>
+              <td>
+                <button class="btn-eliminar">🗑️</button>
+              </td>
+            </tr>
+
+            <!-- Producto 3 -->
+            <tr>
+              <td class="producto-col">
+                <div class="producto-info">
+                  <div class="producto-img" style="background-color: #94a3b8;">🎨</div>
+                  <div>
+                    <h4>Cubeta Pintura Blanca (19L)</h4>
+                    <p class="text-sm">Marca: Comex</p>
+                  </div>
+                </div>
+              </td>
+              <td>s/. 980.00</td>
+              <td>
+                <div class="cantidad-control">
+                  <button>-</button>
+                  <input type="number" value="1" min="1">
+                  <button>+</button>
+                </div>
+              </td>
+              <td class="subtotal-text">s/. 980.00</td>
+              <td>
+                <button class="btn-eliminar">🗑️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Resumen de Compra -->
+      <div class="carrito-resumen">
+        <h3>Resumen del Pedido</h3>
+        <div class="resumen-item">
+          <span>Subtotal</span>
+          <span>s/. 2,880.00</span>
+        </div>
+        <div class="resumen-item">
+          <span>Envío</span>
+          <span>s/. 150.00</span>
+        </div>
+        <div class="resumen-item total">
+          <span>Total a Pagar</span>
+          <span>s/. 3,030.00</span>
+        </div>
+
+        <button class="btn-pagar">Proceder al Pago</button>
+        <a href="./productos.html" class="btn-seguir-comprando">Seguir Comprando</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h3>MultiFierro</h3>
+        <p>Tu tienda de productos tecnológicos y de ferretería de confianza.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: multifierro@gmail.com</p>
+        <p>Tel: 123123123</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social">
+          <a href="#"><img src="../img/svg/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="../img/svg/icons8-tik-tok.svg" alt="TikTok"></a>
+          <a href="#"><img src="../img/svg/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="../img/svg/twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="../img/svg/youtube-play.svg" alt="YouTube"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>2026 MultiFierro - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="../js/js.js"></script>
+
+</body>
+
+</html>
