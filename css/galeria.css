@@ -1,7 +1,117 @@
-.galeria {
-    margin-top: 20px;
+/* GALERÍA STYLES */
+.galeria-main {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.galeria-header h1 {
+    color: #003092;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.galeria-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Filtros */
+.galeria-filtros {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filtro {
+    padding: 10px 20px;
+    background-color: #f1f5f9;
+    border: 2px solid transparent;
+    color: #334155;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtro:hover {
+    background-color: #e2e8f0;
+    color: #003092;
+}
+
+.filtro.activo {
+    background-color: #FEC400;
+    color: #003092;
+    border-color: #FEC400;
+}
+
+/* Grid de la galería */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.galeria-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.galeria-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.img-galeria {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.galeria-item:hover .img-galeria {
+    transform: scale(1.05);
+}
+
+.item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 48, 146, 0.95), rgba(0, 48, 146, 0.6), transparent);
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.galeria-item:hover .item-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.item-info h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #FEC400;
+}
+
+.item-info p {
+    font-size: 0.9rem;
+    color: #f8fafc;
 }
