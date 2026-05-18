@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nosotros | MULTIFIERRO</title>
+
+  <!-- FUENTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/nosotros.css">
+
+  <!-- ICONO -->
+  <link rel="icon" href="../img/logo_M.svg" type="image/x-icon">
+</head>
+
+<body class="pagina-nosotros">
+
+  <!-- ===== BARRA AZUL ===== -->
+ 
+
+  <!-- ===== HEADER ===== -->
+  <header>
+
+    <nav class="navbar">
+
+      <div class="nav-container">
+
+        <!-- LOGO -->
+        <div class="logo">
+          <img src="../img/logo_blanco.png" alt="Logo MultiFierro">
+        </div>
+
+        <!-- MENÚ HAMBURGUESA -->
+        <div class="menu-toggle" id="menu-toggle">
+          ☰
+        </div>
+
+        <!-- MENÚ -->
+        <ul class="nav-links" id="nav-links">
+
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./galeria.html">Galería</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+
+        </ul>
+
+        <!-- BUSCADOR -->
+        <div class="nav-extra">
+
+          <input type="text" placeholder="Buscar...">
+          <button>🔍</button>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- ===== PORTADA ===== -->
+  <section class="portada-nosotros">
+
+  
+
+  <div class="texto-portada">
+
+    <span class="subtitulo">Conócenos</span>
+
+    <h1 class="titulo">QUIÉNES SOMOS</h1>
+
+    <p class="descripcion-portada">
+      MULTIFIERRO es una empresa dedicada a la comercialización de productos tecnológicos modernos y accesorios innovadores. Nos enfocamos en brindar soluciones prácticas, accesibles y de alta calidad para todo tipo de clientes.
+    </p>
+
+  </div>
+
+</section>
+
+  <!-- ===== CONTENIDO ===== -->
+<section class="galeria-grid">
+
+  <!-- FILA 1 -->
+  <a href="#" class="card"
+  data-imagenes='["../img/nosotros1.png","../img/nosotros2.png","../img/nosotros3.png"]'>
+
+    <img src="../img/nosotros1.png">
+
+  </a>
+
+  <div class="card card-color">
+
+    <h3>ACERCA DE MULTIFIERRO</h3>
+
+    <p>
+      MULTIFIERRO es una empresa dedicada a la 
+      comercialización de productos tecnológicos modernos
+       y accesorios innovadores, enfocada en brindar soluciones
+        prácticas, accesibles y de alta calidad para todo tipo
+         de clientes. Nos especializamos en ofrecer productos confiables
+          que faciliten las actividades diarias, mejoren la experiencia
+           tecnológica 
+      y se adapten a las nuevas tendencias del mercado.
+    </p>
+
+  </div>
+
+  <!-- FILA 2 -->
+  <div class="card card-color">
+
+    <p>
+      <strong>MULTIFIERRO S.A.C.</strong>
+      Trabajamos constantemente para ofrecer una atención personalizada y un servicio eficiente, ayudando a nuestros clientes a encontrar productos que satisfagan sus necesidades y expectativas. Nuestro compromiso es brindar confianza, calidad y precios competitivos, manteniendo siempre una relación cercana con cada persona que elige nuestra marca.
+    </p>
+
+    <p>
+      
+    </p>
+
+  </div>
+
+  <a href="#" class="card"
+  data-imagenes='["../img/nosotros4.png","../img/nosotros5.png","../img/nosotros6.png"]'>
+
+    <img src="../img/nosotros4.png">
+
+  </a>
+
+  <!-- FILA 3 -->
+  <a href="#" class="card"
+  data-imagenes='["../img/nosotros2.png","../img/nosotros4.png","../img/nosotros6.png"]'>
+
+    <img src="../img/nosotros2.png">
+
+  </a>
+
+  <div class="card card-color fila3">
+
+    <h3>NUESTRO PROPÓSITO</h3>
+
+    <p>
+      En MULTIFIERRO creemos en la innovación,
+       la responsabilidad y el crecimiento continuo, 
+       por ello buscamos ampliar constantemente nuestro
+        catálogo con productos modernos y funcionales. Nuestro 
+        propósito es convertirnos en una empresa reconocida por 
+        su excelente atención, variedad de productos y compromiso 
+        con la satisfacción del cliente.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- JS para rotar imágenes con fade -->
+<script>
+  const cards = document.querySelectorAll('a.card');
+
+  cards.forEach(card => {
+    const imgTag = card.querySelector('img');
+    const imagenes = JSON.parse(card.dataset.imagenes);
+    let index = 0;
+
+    // crear efecto fade
+    imgTag.style.transition = "opacity 1s";
+
+    setInterval(() => {
+      imgTag.style.opacity = 0; 
+      setTimeout(() => {
+        index = (index + 1) % imagenes.length; 
+        imgTag.src = imagenes[index];
+        imgTag.style.opacity = 1; 
+      }, 500); 
+    }, 4000); 
+  });
+</script>
+
+
+
+  <!-- ===== MISIÓN / VISIÓN / PILARES ===== -->
+  <section class="mision-vision-pilares">
+
+    <div class="contenedor-seccion">
+
+      <div class="bloque mvp">
+
+        <div class="icono">
+          <img src="../img/manos.png" alt="Misión">
+        </div>
+
+        <div class="contenido">
+
+          <h3>Misión</h3>
+
+          <p>
+            Brindar productos tecnológicos innovadores y de calidad.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="bloque mvp">
+
+        <div class="icono">
+          <img src="../img/focos.png" alt="Visión">
+        </div>
+
+        <div class="contenido">
+
+          <h3>Visión</h3>
+
+          <p>
+            Ser una empresa líder en tecnología y servicio al cliente.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="bloque mvp">
+
+        <div class="icono">
+          <img src="../img/pilares.png" alt="Pilares">
+        </div>
+
+        <div class="contenido">
+
+          <h3>Nuestros Pilares</h3>
+
+          <ul>
+            <li>Innovación</li>
+            <li>Calidad</li>
+            <li>Compromiso</li>
+            <li>Responsabilidad</li>
+            <li>Servicio</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  
+
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>MultiFierro</h3>
+      <p>Tu tienda de productos tecnológicos de confianza.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contacto</h4>
+      <p>Email: multifierro@gmail.com</p>
+      <p>Tel: 123123123</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Síguenos</h4>
+      <div class="social">
+        <a href="#"><img src="../img/svg/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="../img/svg/icons8-tik-tok.svg" alt="TikTok"></a>
+        <a href="#"><img src="../img/svg/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="../img/svg/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="../img/svg/youtube-play.svg" alt="YouTube"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>2026 MultiFierro - Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="../js/js.js"></script>
+
+</body>
+</html>
