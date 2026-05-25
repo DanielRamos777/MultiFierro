@@ -1,0 +1,196 @@
+
+.bienvenida {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center; 
+}
+
+.contenedor-inicio {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.contenedor-inicio h1 {
+  font-size: 2.8rem;
+  color: #003092; 
+  margin-bottom: 10px;
+}
+
+.contenedor-inicio .frase-corta {
+  font-size: 1.3rem;
+  color: #e6b514; 
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contenedor-inicio .texto-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.boton-productos {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #003092;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.boton-productos:hover {
+  background-color: #e6b514;
+  color: #000; 
+}
+
+
+.seccion-carrusel {
+  padding: 40px 20px 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.caja-carrusel {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; /* Oculta las fotos que quedan fuera de la vista */
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.bloque-imagenes {
+  display: flex;
+  width: 300%; 
+  transition: transform 0.5s ease-in-out; /* para que el deslizamiento no sea rapidoo sino suavee */
+}
+
+.cada-foto {
+  width: 33.333%; 
+  position: relative;
+}
+
+.cada-foto img {
+  width: 100%;
+  height: 450px; 
+  object-fit: cover;
+  display: block;
+}
+
+.texto-foto {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+.texto-foto h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.5rem;
+}
+
+.texto-foto p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+
+/*para los botones  */
+#foto-1:checked ~ .bloque-imagenes {
+  transform: translateX(0%);
+}
+
+#foto-2:checked ~ .bloque-imagenes {
+  transform: translateX(-33.333%);
+}
+
+#foto-3:checked ~ .bloque-imagenes {
+  transform: translateX(-66.666%);
+}
+
+/*para las flechas */
+.flechas {
+  display: none; /* Oculta todas las flechas por defecto */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+
+#foto-1:checked ~ .flecha-1,
+#foto-2:checked ~ .flecha-2,
+#foto-3:checked ~ .flecha-3 {
+  display: flex;
+}
+
+.boton-flecha {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.boton-flecha:hover { 
+  background-color: #e6b514;
+  color: #000;
+}
+
+
+.puntos-abajo {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.punto {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+#foto-1:checked ~ .puntos-abajo .p-1,
+#foto-2:checked ~ .puntos-abajo .p-2,
+#foto-3:checked ~ .puntos-abajo .p-3 {
+  background-color: #e6b514; 
+}
+
+/* para q se adapte a celular */
+@media (max-width: 768px) {
+  .contenedor-inicio h1 { font-size: 2rem; }
+  .cada-foto img { height: 300px; } /* el banner se hace más pequeño en pantallas chicas */
+  .texto-foto { width: 90%; bottom: 20px; padding: 10px; }
+  .texto-foto h3 { font-size: 1.2rem; }
+  .boton-flecha { width: 40px; height: 40px; font-size: 16px; }
+}
