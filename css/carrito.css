@@ -23,8 +23,9 @@
     flex: 1 1 700px;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    overflow-x: auto; /* Para que sea responsiva en móviles */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+    /* Para que sea responsiva en móviles */
 }
 
 .carrito-table {
@@ -154,7 +155,7 @@
     background: #f8fafc;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .carrito-resumen h3 {
@@ -221,27 +222,14 @@
     color: #FEC400;
 }
 
-/* Icono del Carrito en el navbar global */
-.cart-icon {
-    text-decoration: none;
-    font-size: 1.2rem;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 8px 12px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    margin-left: 10px;
-}
 
-.cart-icon:hover {
-    background: #FEC400;
-    transform: scale(1.05);
-}
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .carrito-container {
         flex-direction: column;
     }
+
     .carrito-resumen {
         width: 100%;
     }

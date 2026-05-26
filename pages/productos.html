@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,210 +14,216 @@
 
 <body>
 
-<!-- HEADER -->
-<header>
-  <nav class="navbar">
-    <div class="nav-container">
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
 
-      <div class="logo">
-        <img src="../img/logo_blanco.png" alt="Logo MultiFierro">
+        <div class="logo">
+          <img src="../img/logo_blanco.png" alt="Logo MultiFierro">
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+          ☰
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./galeria.html">Galería</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="nav-extra">
+          <input type="text" placeholder="Buscar...">
+          <button>🔍</button>
+        </div>
+        <a href="./carrito.html" class="cart-icon">🛒</a>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="productos">
+
+      <div class="titulo-productos">
+        <span>Nuestros Productos</span>
+        <h2>CATÁLOGO MULTIFIERRO</h2>
       </div>
 
-      <div class="menu-toggle" id="menu-toggle">
-        ☰
-      </div>
+      <div class="contenedor-productos">
 
-      <ul class="nav-links" id="nav-links">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./galeria.html">Galería</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
+        <!-- Producto -->
+        <div class="producto-card">
 
-      <div class="nav-extra">
-        <input type="text" placeholder="Buscar...">
-        <button>🔍</button>
-      </div>
+          <div class="imagen-producto">
+            <img
+              src="https://oechsle.vteximg.com.br/arquivos/ids/22698164-1000-1000/imageUrl_1.jpg?v=638969258350400000">
+          </div>
 
-    </div>
-  </nav>
-</header>
+          <div class="contenido-producto">
 
-<!-- MAIN -->
-<main><section class="productos">
+            <span class="categoria">Herramientas</span>
 
-  <div class="titulo-productos">
-    <span>Nuestros Productos</span>
-    <h2>CATÁLOGO MULTIFIERRO</h2>
-  </div>
+            <h3>Taladro Percutor Bosch</h3>
 
-  <div class="contenedor-productos">
+            <p>
+              Taladro percutor de alta potencia para trabajos profesionales.
+            </p>
 
-    <!-- Producto -->
-    <div class="producto-card">
+            <div class="footer-producto">
 
-      <div class="imagen-producto">
-        <img src="https://oechsle.vteximg.com.br/arquivos/ids/22698164-1000-1000/imageUrl_1.jpg?v=638969258350400000">
-      </div>
+              <span class="precio">S/ 249.90</span>
 
-      <div class="contenido-producto">
+              <button>Comprar</button>
 
-        <span class="categoria">Herramientas</span>
+            </div>
 
-        <h3>Taladro Percutor Bosch</h3>
+          </div>
 
-        <p>
-          Taladro percutor de alta potencia para trabajos profesionales.
-        </p>
+        </div>
 
-        <div class="footer-producto">
+        <!-- Producto -->
+        <div class="producto-card">
 
-          <span class="precio">S/ 249.90</span>
+          <div class="imagen-producto">
+            <img src="https://promart.vteximg.com.br/arquivos/ids/9115533-1000-1000/91113.jpg?v=638882939765870000">
+          </div>
 
-          <button>Comprar</button>
+          <div class="contenido-producto">
+
+            <span class="categoria">Herramientas</span>
+
+            <h3>Martillo Stanley</h3>
+
+            <p>
+              Martillo de acero resistente con mango ergonómico.
+            </p>
+
+            <div class="footer-producto">
+
+              <span class="precio">S/ 39.90</span>
+
+              <button>Comprar</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Producto -->
+        <div class="producto-card">
+
+          <div class="imagen-producto">
+            <img
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQBF2SNdCYsO5cleyb6BscQ5APJtHXtq_-hV-F-IaIJGs2pKCT73kGaf92SRrTkrtI-8Cy8x4He_5ZfB81mrs0QYXOl45EgEvR_ysiMqPHMWKen6YLachtBaqGkVzMoDwZfvx7Eaik&usqp=CAc">
+          </div>
+
+          <div class="contenido-producto">
+
+            <span class="categoria">Pinturas</span>
+
+            <h3>Pintura Blanca Látex</h3>
+
+            <p>
+              Pintura látex para interiores y exteriores.
+            </p>
+
+            <div class="footer-producto">
+
+              <span class="precio">S/ 79.90</span>
+
+              <button>Comprar</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Producto -->
+        <div class="producto-card">
+
+          <div class="imagen-producto">
+            <img
+              src="https://oechsle.vteximg.com.br/arquivos/ids/20115196-1000-1000/image-218a27b8a1d442fca7c7b4cb71425db8.jpg?v=638685676182130000">
+          </div>
+
+          <div class="contenido-producto">
+
+            <span class="categoria">Herramientas Eléctricas</span>
+
+            <h3>Amoladora Makita</h3>
+
+            <p>
+              Amoladora angular para corte industrial.
+            </p>
+
+            <div class="footer-producto">
+
+              <span class="precio">S/ 329.00</span>
+
+              <button>Comprar</button>
+
+            </div>
+
+          </div>
 
         </div>
 
       </div>
 
-    </div>
+    </section>
+  </main>
 
-    <!-- Producto -->
-    <div class="producto-card">
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
 
-      <div class="imagen-producto">
-        <img src="https://promart.vteximg.com.br/arquivos/ids/9115533-1000-1000/91113.jpg?v=638882939765870000">
+      <div class="footer-section">
+        <h3>MultiFierro</h3>
+        <p>Tu tienda de productos tecnológicos de confianza.</p>
       </div>
 
-      <div class="contenido-producto">
+      <div class="footer-section">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
 
-        <span class="categoria">Herramientas</span>
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: multifierro@gmail.com</p>
+        <p>Tel: 123123123</p>
+      </div>
 
-        <h3>Martillo Stanley</h3>
-
-        <p>
-          Martillo de acero resistente con mango ergonómico.
-        </p>
-
-        <div class="footer-producto">
-
-          <span class="precio">S/ 39.90</span>
-
-          <button>Comprar</button>
-
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social">
+          <a href="#"><img src="../img/svg/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="../img/svg/icons8-tik-tok.svg" alt="TikTok"></a>
+          <a href="#"><img src="../img/svg/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="../img/svg/twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="../img/svg/youtube-play.svg" alt="YouTube"></a>
         </div>
-
       </div>
 
     </div>
 
-    <!-- Producto -->
-    <div class="producto-card">
-
-      <div class="imagen-producto">
-        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQBF2SNdCYsO5cleyb6BscQ5APJtHXtq_-hV-F-IaIJGs2pKCT73kGaf92SRrTkrtI-8Cy8x4He_5ZfB81mrs0QYXOl45EgEvR_ysiMqPHMWKen6YLachtBaqGkVzMoDwZfvx7Eaik&usqp=CAc">
-      </div>
-
-      <div class="contenido-producto">
-
-        <span class="categoria">Pinturas</span>
-
-        <h3>Pintura Blanca Látex</h3>
-
-        <p>
-          Pintura látex para interiores y exteriores.
-        </p>
-
-        <div class="footer-producto">
-
-          <span class="precio">S/ 79.90</span>
-
-          <button>Comprar</button>
-
-        </div>
-
-      </div>
-
+    <div class="footer-bottom">
+      <p>2026 MultiFierro - Todos los derechos reservados</p>
     </div>
+  </footer>
 
-    <!-- Producto -->
-    <div class="producto-card">
-
-      <div class="imagen-producto">
-        <img src="https://oechsle.vteximg.com.br/arquivos/ids/20115196-1000-1000/image-218a27b8a1d442fca7c7b4cb71425db8.jpg?v=638685676182130000">
-      </div>
-
-      <div class="contenido-producto">
-
-        <span class="categoria">Herramientas Eléctricas</span>
-
-        <h3>Amoladora Makita</h3>
-
-        <p>
-          Amoladora angular para corte industrial.
-        </p>
-
-        <div class="footer-producto">
-
-          <span class="precio">S/ 329.00</span>
-
-          <button>Comprar</button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-</main>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-container">
-
-    <div class="footer-section">
-      <h3>MultiFierro</h3>
-      <p>Tu tienda de productos tecnológicos de confianza.</p>
-    </div>
-
-    <div class="footer-section">
-      <h4>Enlaces</h4>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section">
-      <h4>Contacto</h4>
-      <p>Email: multifierro@gmail.com</p>
-      <p>Tel: 123123123</p>
-    </div>
-
-    <div class="footer-section">
-      <h4>Síguenos</h4>
-      <div class="social">
-        <a href="#"><img src="../img/svg/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="../img/svg/icons8-tik-tok.svg" alt="TikTok"></a>
-        <a href="#"><img src="../img/svg/instagram.svg" alt="Instagram"></a>
-        <a href="#"><img src="../img/svg/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="../img/svg/youtube-play.svg" alt="YouTube"></a>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>2026 MultiFierro - Todos los derechos reservados</p>
-  </div>
-</footer>
-
-<script src="../js/js.js"></script>
+  <script src="../js/js.js"></script>
 
 </body>
+
 </html>
